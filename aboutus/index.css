@@ -26,14 +26,14 @@ body{
 	font-family: 'Minecraft', sans-serif;
 	font-size: 30px;
 	line-height: 10%; /* 0px if you want to overlaps completly */
-    text-align: center;
+    	text-align: center;
 	text-shadow: 2px 2px #FFE633;
 }
 .a4 {
 	font-family: serif;
 	font-size: 20px;
 	line-height: 10%; /* 0px if you want to overlaps completly */
-    text-align: center;
+   	text-align: center;
 	text-shadow: 1px 1px #030303;
 }
 .div1 {
