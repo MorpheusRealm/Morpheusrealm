@@ -170,56 +170,6 @@
 		<a href="aboutus.html" title="About Us">About Us</a>
     </nav>
 </main>
-<script>
-
-
-
-    function updateDescription(playerCount) {
-        const description = document.getElementById('description');
-
-        if (playerCount === null) {
-            description.textContent = "Welcome To Morpheus Craft!";
-        } else if (playerCount === 0) {
-            description.textContent = "Join Now To Start a New Adventure!";
-        } else {
-            description.textContent = "Join the adventure with ${playerCount} players online! We're here to provide you with an unforgettable Minecraft experience.";
-        }
-    }
-
-
-    function updatePlayerCount() {
-        fetch(`http://g2.moonodes.net:25255/api/online/`) // [7] Replace localhost:8081 with your server IP:PORT
-            .then(response => response.json())
-            .then(data => {
-                const playerCount = data.value;
-                updateDescription(playerCount);
-            })
-            .catch(error => {
-                console.error('Failed to fetch player count:', error);
-                updateDescription(null); // Server is offline
-            });
-    }
-
-    // Call the function to update the player count every second
-    setInterval(updatePlayerCount, 1000);
-
-    function copyIp() {
-        navigator.clipboard
-            .writeText("g2.moonodes.net:25255")  // [8] Replace mc.yourserver.com with your server IP
-            .then(() => {
-                const copyButton = document.querySelector('.copy-ip-button');
-                copyButton.innerHTML = `
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    Copied!
-                `;
-            })
-            .catch((error) => {
-                console.error(`Failed to copy IP to clipboard: ${error}`);
-            });
-    }
-</script>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
