@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>Morpheus Craft | Home</title>  <!-- [1] Your Page Title Eg:- Your Server Name -->
-    <meta name="title" content="YourServer" />
-    <meta name="description" content="YourServer Description" />
+    <meta name="title" content="Morpheus Craft" />
+    <meta name="description" content="Welcome to Morpheus Network!" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -38,7 +38,7 @@
 
         body {
             background-color: var(--background-color);
-	    background-image: url("bg.png");
+	        background-image: url("bg.png");
             background-size: cover;
             background-repeat: no-repeat;
             font-family: "Outfit", sans-serif;
@@ -58,8 +58,17 @@
 
         h1 {
             color: black;
-            font-size: 4.25rem;
-            margin-bottom: 1.5rem;
+            font-size: 4rem;
+            margin-bottom: 0.1rem;
+			padding-top: -10rem;
+ ;
+        }
+		
+		h2 {
+            color: black;
+            font-size: 1.25rem;
+            margin-bottom: 0.3rem;
+			padding-top:0.2rem;
         }
 
         p {
@@ -109,9 +118,7 @@
             body {
                 overflow-y: visible;
             }
-            h1 {
-                padding-top: 4rem;
-            }
+
             nav {
                 flex-direction: column;
                 padding-bottom: 4rem;
@@ -141,10 +148,17 @@
 <body>
 <main>
     <h1>Morpheus Craft</h1> <!-- [2] Your Server Name -->
+	<h2>Survival</h2>
     <button class="copy-ip-button" onclick="copyIp()">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
         </svg>
         g2.moonodes.net:25255  <!-- [3] Your Server IP -->
+    </button>
+	<h2>Bedwars</h2>
+	<button class="copy-ip-button" onclick="copyIp()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        </svg>
+        g2.moonodes.net:26201  <!-- [3] Your Server IP -->
     </button>
     <p id="description">
         Welcome To Morpheus Craft!
